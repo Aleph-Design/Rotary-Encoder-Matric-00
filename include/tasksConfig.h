@@ -2,16 +2,19 @@
 * Put all config for the whole project here.
 * Define all macros for the project
 */
-#define XYZ_POINTER     someSignificantName
+# include <arduino.h>   // Equal to: #include <FreeRTOS.h>
 
-#define XYZ_NAME        "Name"
 
-#define XYZ_STACK       1024
+#define SUN_POINTER     someUsefullName
 
-#define XYZ_HANDLE      NULL
+#define SUN_NAME        "Some Usefull Name"
 
-#define XYZ_PRIORITY    1
+#define SUN_STACK       1024
 
-#define XYZ_PARAM       NULL
+#define SUN_HANDLE      NULL
 
-#define XYZ_CORE        1
+#define SUN_PRIORITY    1
+
+#define SUN_PARAM       NULL
+
+#define SUN_CORE        1

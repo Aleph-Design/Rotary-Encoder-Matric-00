@@ -1,3 +1,5 @@
+
+#include <stdlib.h>
 #include <tasksConfig.h>
 #include <createAllTasks.h>
 #include <someUsefullName.h>
@@ -12,12 +14,12 @@ void createAllTasks()
     // start running as soon as they're created.
 
     xTaskCreatePinnedToCore(
-         someUsefullName,
-         "Some Usefull Name",
-         1024,
-         NULL,      // 'NULL' undeclared (first use in this function)
-         1,
-         NULL,      // handle
-         1
+         SUN_POINTER,
+         SUN_NAME,
+         SUN_STACK,
+         SUN_PARAM,  
+         SUN_PRIORITY,
+         SUN_HANDLE, 
+         SUN_CORE
     );
 }

@@ -5,11 +5,11 @@ void setup()
 {
   createAllTasks();
 
-  vTaskStartScheduler();
+  // vTaskStartScheduler(); not needed
 }
 
 void loop() 
 {
   // This should never ever run!
-  vTaskDelete(NULL);
+  // vTaskDelete(NULL); don't do that!
 }
